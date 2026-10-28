@@ -96,6 +96,13 @@ SigmaTel/Sanyo 公开文档，以及三个 AI Agent（DSH/DeepSeek、Antigravity
 和执行了全部实验的人类操作员。
 **实名致谢见 [CREDITS.md](./CREDITS.md)**——fork 时请保留。
 
+## 作者
+
+**gladess（小G）** — 设备持有人、战役发起人、全部 26 次刷机的真机操作员
+（[GitHub: Gladess1102](https://github.com/Gladess1102)）。三个 AI Agent（DSH/DeepSeek、
+Antigravity/Gemini、ZCode/GLM）负责分析，每一个变砖风险的决断和每一次听测都是他完成的。
+完整团队致谢见 [CREDITS.md](./CREDITS.md)。
+
 ## 许可
 
 MIT — 见 [LICENSE](./LICENSE)。与 Sharp、SigmaTel/Freescale、Sanyo 无隶属关系；

@@ -103,6 +103,13 @@ public SigmaTel/Sanyo documentation — plus three AI agents (DSH/DeepSeek, Anti
 ZCode/GLM) and one human operator who ran every experiment.
 **Full real-name credits: [CREDITS.md](./CREDITS.md)** — please keep them intact in forks.
 
+## Author
+
+**gladess (小G)** — device owner, campaign lead, and the human hands behind all 26 flash
+cycles ([GitHub: Gladess1102](https://github.com/Gladess1102)). The three AI agents
+(DSH/DeepSeek, Antigravity/Gemini, ZCode/GLM) did the analysis; every brick-risk decision
+and every listening test was his. Full team credits in [CREDITS.md](./CREDITS.md).
+
 ## License
 
 MIT — see [LICENSE](./LICENSE). Not affiliated with Sharp, SigmaTel/Freescale, or Sanyo.
