@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "timeline_path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/out/timeline.json",
+  "timeline_sha256": "25f083631b9bf789aa3cc9315c3ebb7216ffff843e03a8492fb9e7741614510c",
+  "clip_count": 10,
+  "project_contract": {
+    "ok": true,
+    "missing": [],
+    "requires": [
+      "project",
+      "assets",
+      "sequence_or_output_canvas",
+      "tracks",
+      "video_track"
+    ]
+  },
+  "issues": [],
+  "elapsed_seconds": 0.646
+}

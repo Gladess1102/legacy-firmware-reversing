@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ZH,PingFang SC,52,&H00FFFFFF,&H00FFFFFF,&H00101418,&H80000000,0,0,0,0,100,100,0,0,1,3,1,2,80,80,150,1
+Style: EN,Menlo,30,&H0090C8FF,&H00FFFFFF,&H00101418,&H80000000,0,0,0,0,100,100,0,0,1,2,1,2,80,80,92,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.65,0:00:10.60,ZH,,0,0,0,,2004年的夏普 MP-B300 · SigmaTel 主控 · DSP 内核 · 三洋收音芯片
+No source. No docs. Vendor long gone.
+Dialogue: 0,0:00:00.65,0:00:10.60,EN,,0,0,0,,A 2004 Sharp MP-B300. No source code, no docs, vendor gone.
+Dialogue: 0,0:00:10.85,0:00:24.10,ZH,,0,0,0,,三个 AI 接力 · 26 个固件版本
+全中文汉化完成 — 却在 90 MHz 撞上神秘的音量断崖
+Dialogue: 0,0:00:10.85,0:00:24.10,EN,,0,0,0,,3 AI agents. 26 firmware cycles. Full Chinese localization —
+then a mysterious volume cliff at 90 MHz.
+Dialogue: 0,0:00:24.35,0:00:34.48,ZH,,0,0,0,,从 SCSI 厂商命令到 DSP 指令级逆向，再到 PC 端 JIT 仿真
+Every hypothesis tested on real hardware
+Dialogue: 0,0:00:24.35,0:00:34.48,EN,,0,0,0,,SCSI vendor commands → DSP-level reverse engineering → PC JIT emulation.
+Every hypothesis tested on real hardware.
+Dialogue: 0,0:00:34.73,0:00:45.06,ZH,,0,0,0,,6,763 字全量中文字库 · 零膨胀注入
+Plus a zero-brick flash safety gate
+Dialogue: 0,0:00:34.73,0:00:45.06,EN,,0,0,0,,6,763-glyph Chinese font, zero-growth injection,
+plus a zero-brick flash safety gate.
+Dialogue: 0,0:00:45.31,0:00:56.69,ZH,,0,0,0,,方法论现已开源 · MIT
+完整战役史与实名致谢都在仓库里
+Dialogue: 0,0:00:45.31,0:00:56.69,EN,,0,0,0,,The methodology is now open source. MIT licensed.

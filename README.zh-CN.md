@@ -32,6 +32,12 @@
 └── CREDITS.md                实名致谢（见下）
 ```
 
+## 一分钟介绍
+
+https://github.com/Gladess1102/legacy-firmware-reversing/releases/download/v0.1.0/intro.mp4
+
+*（或直接看仓库内的 `docs/assets/intro.mp4` —— 中英双语字幕，1080p）*
+
 ## 五大支柱
 
 1. **零变砖的协议逆向**——厂商 SCSI 命令、USB BOT 短包终止陷阱、扇区尾标白名单、

@@ -1,0 +1,20 @@
+{
+  "timeline_path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/out/timeline.json",
+  "timeline_sha256": "25f083631b9bf789aa3cc9315c3ebb7216ffff843e03a8492fb9e7741614510c",
+  "output_path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/out/preview.mp4",
+  "output_sha256": "77a4b7aca406f4c393da0f601609b109ef8fc3d6c15eab9bbc2c19aabb7daf6a",
+  "renderer_scope": "project tracks: video/main, audio/music/voiceover, subtitle/text, image/overlay",
+  "output_width": 1920,
+  "output_height": 1080,
+  "output_fps": 30.0,
+  "expected_duration_seconds": 56.84,
+  "video_clip_count": 5,
+  "audio_clip_count": 5,
+  "text_clip_count": 0,
+  "overlay_clip_count": 0,
+  "unsupported_track_count": 0,
+  "normalization": "video clips are placed on a black sequence canvas by timeline_start with end-frame padding; audio is pre-baked into full-length timeline-positioned wav beds before mixing; text/image overlays are composited by enable windows",
+  "audio_render_strategy": "prebaked_full_length_audio_beds_no_adelay",
+  "video_boundary_strategy": "clone-pad clip tails and extend video overlay enable windows by a few frames",
+  "elapsed_seconds": 20.656
+}

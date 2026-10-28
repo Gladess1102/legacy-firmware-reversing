@@ -1,0 +1,7 @@
+image md5(first12): 340500010000690a00020000
+changed bytes : 10
+changed pages : 1: 45
+tail violations: 0
+[OK] safety gates passed
+differing bytes: 10 (sector tails stripped)
+regions (1): 0x16c6f-0x16c9e

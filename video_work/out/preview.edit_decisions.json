@@ -1,0 +1,126 @@
+{
+  "timeline_path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/out/timeline.json",
+  "timeline_sha256": "25f083631b9bf789aa3cc9315c3ebb7216ffff843e03a8492fb9e7741614510c",
+  "sequence": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 56.84
+  },
+  "decisions": [
+    {
+      "kind": "video_clip",
+      "track": "main",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg1.mp4",
+      "source_start": 0.0,
+      "source_end": 10.75,
+      "timeline_start": 0.0,
+      "timeline_end": 10.75,
+      "reason": "Open on the actual device running the finished Chinese FM UI - establishes the artifact and hooks the viewer.",
+      "beat": null
+    },
+    {
+      "kind": "video_clip",
+      "track": "main",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg2.mp4",
+      "source_start": 0.0,
+      "source_end": 13.5,
+      "timeline_start": 10.75,
+      "timeline_end": 24.25,
+      "reason": "Show the 90MHz volume cliff on-device - the central mystery the whole campaign chased.",
+      "beat": null
+    },
+    {
+      "kind": "video_clip",
+      "track": "main",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg3.mp4",
+      "source_start": 0.0,
+      "source_end": 10.38,
+      "timeline_start": 24.25,
+      "timeline_end": 34.63,
+      "reason": "Extracted proprietary UI resources (mode/FM/music capsules) - tangible proof of the resource-tree breakthrough.",
+      "beat": null
+    },
+    {
+      "kind": "video_clip",
+      "track": "main",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg4.mp4",
+      "source_start": 0.0,
+      "source_end": 10.58,
+      "timeline_start": 34.63,
+      "timeline_end": 45.21,
+      "reason": "Real fw-recon CLI output passing the flash safety gate - the deliverable tooling, not a mockup.",
+      "beat": null
+    },
+    {
+      "kind": "video_clip",
+      "track": "main",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg5.mp4",
+      "source_start": 0.0,
+      "source_end": 11.63,
+      "timeline_start": 45.21,
+      "timeline_end": 56.84,
+      "reason": "GitHub endcard with clone command and license - the call to action.",
+      "beat": null
+    }
+  ],
+  "rendered_overlays": [],
+  "rendered_audio": [
+    {
+      "kind": "audio_clip",
+      "track": "narration-zh",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n1.wav",
+      "source_start": 0.0,
+      "source_end": 9.5,
+      "timeline_start": 0.9,
+      "timeline_end": 10.4,
+      "volume": 1.0,
+      "reason": "Narration 1 aligned to device intro; 0.9s lead-in for title readability."
+    },
+    {
+      "kind": "audio_clip",
+      "track": "narration-zh",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n2.wav",
+      "source_start": 0.0,
+      "source_end": 12.8,
+      "timeline_start": 11.1,
+      "timeline_end": 23.9,
+      "volume": 1.0,
+      "reason": "Narration 2 over the cliff still, starting 0.35s into the scene."
+    },
+    {
+      "kind": "audio_clip",
+      "track": "narration-zh",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n3.wav",
+      "source_start": 0.0,
+      "source_end": 9.68,
+      "timeline_start": 24.6,
+      "timeline_end": 34.28,
+      "volume": 1.0,
+      "reason": "Narration 3 over extracted-resources scene."
+    },
+    {
+      "kind": "audio_clip",
+      "track": "narration-zh",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n4.wav",
+      "source_start": 0.0,
+      "source_end": 9.88,
+      "timeline_start": 34.98,
+      "timeline_end": 44.86,
+      "volume": 1.0,
+      "reason": "Narration 4 over CLI gate scene."
+    },
+    {
+      "kind": "audio_clip",
+      "track": "narration-zh",
+      "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n5.wav",
+      "source_start": 0.0,
+      "source_end": 10.68,
+      "timeline_start": 45.56,
+      "timeline_end": 56.24,
+      "volume": 1.0,
+      "reason": "Narration 5 over GitHub endcard."
+    }
+  ],
+  "unsupported_tracks": []
+}

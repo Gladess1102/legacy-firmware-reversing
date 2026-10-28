@@ -1,0 +1,161 @@
+{
+ "project": {
+  "name": "legacy-firmware-reversing intro (60s)",
+  "description": "One-minute bilingual introduction for the open-source legacy-firmware-reversing skill/plugin repo. Ken Burns stills + Chinese TTS narration + burned bilingual subtitles.",
+  "fps": 30,
+  "language": "zh+en"
+ },
+ "assets": [
+  {
+   "id": "seg1",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg1.mp4",
+   "type": "video",
+   "role": "device intro still"
+  },
+  {
+   "id": "seg2",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg2.mp4",
+   "type": "video",
+   "role": "90MHz cliff still"
+  },
+  {
+   "id": "seg3",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg3.mp4",
+   "type": "video",
+   "role": "extracted UI resources"
+  },
+  {
+   "id": "seg4",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg4.mp4",
+   "type": "video",
+   "role": "fw-recon CLI gate"
+  },
+  {
+   "id": "seg5",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg5.mp4",
+   "type": "video",
+   "role": "GitHub endcard"
+  },
+  {
+   "id": "n1",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n1.wav",
+   "type": "audio",
+   "role": "narration zh 1"
+  },
+  {
+   "id": "n2",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n2.wav",
+   "type": "audio",
+   "role": "narration zh 2"
+  },
+  {
+   "id": "n3",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n3.wav",
+   "type": "audio",
+   "role": "narration zh 3"
+  },
+  {
+   "id": "n4",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n4.wav",
+   "type": "audio",
+   "role": "narration zh 4"
+  },
+  {
+   "id": "n5",
+   "path": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n5.wav",
+   "type": "audio",
+   "role": "narration zh 5"
+  }
+ ],
+ "sequence": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 56.84,
+  "audio_rate": 48000
+ },
+ "tracks": [
+  {
+   "type": "video",
+   "name": "main",
+   "clips": [
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg1.mp4",
+     "start": 0.0,
+     "end": 10.75,
+     "timeline_start": 0.0,
+     "reason": "Open on the actual device running the finished Chinese FM UI - establishes the artifact and hooks the viewer."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg2.mp4",
+     "start": 0.0,
+     "end": 13.5,
+     "timeline_start": 10.75,
+     "reason": "Show the 90MHz volume cliff on-device - the central mystery the whole campaign chased."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg3.mp4",
+     "start": 0.0,
+     "end": 10.38,
+     "timeline_start": 24.25,
+     "reason": "Extracted proprietary UI resources (mode/FM/music capsules) - tangible proof of the resource-tree breakthrough."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg4.mp4",
+     "start": 0.0,
+     "end": 10.58,
+     "timeline_start": 34.63,
+     "reason": "Real fw-recon CLI output passing the flash safety gate - the deliverable tooling, not a mockup."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/seg5.mp4",
+     "start": 0.0,
+     "end": 11.63,
+     "timeline_start": 45.21,
+     "reason": "GitHub endcard with clone command and license - the call to action."
+    }
+   ]
+  },
+  {
+   "type": "voiceover",
+   "name": "narration-zh",
+   "clips": [
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n1.wav",
+     "start": 0.0,
+     "end": 9.5,
+     "timeline_start": 0.9,
+     "reason": "Narration 1 aligned to device intro; 0.9s lead-in for title readability."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n2.wav",
+     "start": 0.0,
+     "end": 12.8,
+     "timeline_start": 11.1,
+     "reason": "Narration 2 over the cliff still, starting 0.35s into the scene."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n3.wav",
+     "start": 0.0,
+     "end": 9.68,
+     "timeline_start": 24.6,
+     "reason": "Narration 3 over extracted-resources scene."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n4.wav",
+     "start": 0.0,
+     "end": 9.88,
+     "timeline_start": 34.98,
+     "reason": "Narration 4 over CLI gate scene."
+    },
+    {
+     "source": "/Users/yangyuxin/Desktop/legacy-firmware-reversing/video_work/n5.wav",
+     "start": 0.0,
+     "end": 10.68,
+     "timeline_start": 45.56,
+     "reason": "Narration 5 over GitHub endcard."
+    }
+   ]
+  }
+ ]
+}
