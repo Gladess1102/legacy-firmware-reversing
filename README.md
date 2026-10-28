@@ -34,12 +34,6 @@ source code, no public flashing docs, and a vendor that no longer exists.
 └── CREDITS.md                real-name attributions (see below)
 ```
 
-## 60-second intro
-
-https://github.com/Gladess1102/legacy-firmware-reversing/releases/download/v0.1.0/intro.mp4
-
-*(or watch `docs/assets/intro.mp4` in this repo — bilingual, 1080p)*
-
 ## The five pillars
 
 1. **Protocol reverse engineering with a zero-brick guarantee** — vendor SCSI commands,
