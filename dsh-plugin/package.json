@@ -1,0 +1,27 @@
+{
+  "name": "dsh-fw-recon",
+  "version": "0.1.0",
+  "description": "Legacy firmware recon toolkit for DSH: flash-image safety gates (sector-tail whitelist, protected-page asserts), twin-image diff, and falsification-experiment logbook. Zero runtime dependencies.",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "fw-recon": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "firmware",
+    "reverse-engineering",
+    "sigmatel",
+    "flash",
+    "security-gate"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
