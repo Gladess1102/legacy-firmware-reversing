@@ -114,7 +114,7 @@ description: >
 | [templates/EXPERIMENTS.template.md](./templates/EXPERIMENTS.template.md) | 证伪实验登记纪律（先预期后观测） | 每次真机/仿真实验前 |
 | [templates/safe_flasher.py](./templates/safe_flasher.py) | 零变砖刷写骨架（尺寸/保护页/尾标三重断言） | 任何刷写动作之前 |
 | [templates/surrogate_stub.S](./templates/surrogate_stub.S) | DSP56300 替身桩模板 + 已知暗坑（do-a0、JIT 缓存、位序） | 需要 PC 端仿真模块时 |
-| [dsh-plugin/](./dsh-plugin/) | DSH 插件 + 独立 CLI：`fw-recon check/diff/log` | 有 node 环境时优先用 CLI 过闸门 |
+| [package.json](./package.json) + [bin/cli.js](./bin/cli.js) | DSH 插件（仓库根即包）+ 独立 CLI：`fw-recon check/diff/log` | 有 node 环境时优先用 CLI 过闸门 |
 | [case-studies/MP-B300.md](./case-studies/MP-B300.md) | 完整战役案例（SigmaTel/DSP56004/Sanyo LV24002） | 需要参照同类设备时 |
 
 **CLI 速查**（零依赖，node >= 18）：
