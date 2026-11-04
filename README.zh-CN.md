@@ -64,7 +64,17 @@ dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
 dsh plugin --profile <profile> add /绝对路径/legacy-firmware-reversing
 ```
 
-装完重启 DSH。插件注册一个 `fw-recon` service 供 Agent 调用；下面的 CLI 有无 DSH 都能用。
+> **桌面 App 用户注意：** DSH 0.2.1-rc.2 起 CLI 会硬编码拒绝 `desktop` profile
+> （`profile "desktop" is managed exclusively by the Electron application`），
+> `dsh plugin --profile desktop …` 跑不通。请改用 App 的 GUI 插件页安装，或进入
+> `~/.dsh/profiles/desktop` 用 `pnpm add` 直装并把包写进该 profile 的
+> `dsh.profile.bundles`。两种方式装完都要重启 App。
+
+装完重启 DSH。插件注册一个 `fw-recon` cordis service，供**其它插件**通过
+`ctx.get("fw-recon")` 使用；它不会给模型的工具列表新增工具。下面的 CLI 有无 DSH 都能用。
+
+实验登记写入配置项 `workDir`，该值**默认为空**——不会在任何人的桌面上凭空建目录。首次调用
+`logExperiment` 之前，请先设 `FW_RECON_WORKDIR` 或填写插件设置卡。
 
 ### 作为独立 CLI（不需要 DSH）
 

@@ -71,8 +71,19 @@ dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
 dsh plugin --profile <profile> add /absolute/path/to/legacy-firmware-reversing
 ```
 
-Restart DSH afterwards. The plugin registers an `fw-recon` service the agent can call;
-the CLI below works with or without DSH.
+> **Desktop App users:** since DSH 0.2.1-rc.2 the CLI hard-rejects the `desktop` profile
+> (`profile "desktop" is managed exclusively by the Electron application`), so
+> `dsh plugin --profile desktop …` cannot work. Install through the App's GUI plugin page
+> instead, or run `pnpm add` inside `~/.dsh/profiles/desktop` and add the package to that
+> profile's `dsh.profile.bundles`. Restart the App afterwards either way.
+
+Restart DSH afterwards. The plugin registers an `fw-recon` cordis service for **other plugins**
+to consume via `ctx.get("fw-recon")`; it does not add tools to the model's tool list. The CLI
+below works with or without DSH.
+
+Experiment logging writes into the configured `workDir`, which is **unset by default** — no
+directory is ever created on your Desktop. Set `FW_RECON_WORKDIR` or fill in the plugin's
+settings card before the first `logExperiment`.
 
 ### As a standalone CLI (no DSH needed)
 

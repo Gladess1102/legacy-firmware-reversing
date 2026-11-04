@@ -17,9 +17,13 @@ function parsePages(spec) {
   for (const part of String(spec).split(",")) {
     const m = part.match(/^(\d+)(?:-(\d+))?$/);
     if (!m) throw new Error(`bad page spec: ${part}`);
-    const a = +m[1], b = m[2] ? +m[2] : a;
+    // A bare page number means that one page: [a, a+1), not [a, a).
+    const a = +m[1], b = m[2] ? +m[2] : a + 1;
+    if (b <= a) throw new Error(`bad page range: ${part} (end must exceed start)`);
     for (let i = a; i < b; i++) out.push(i);
   }
+  // An empty result would leave the protected-page gate with nothing to assert.
+  if (out.length === 0) throw new Error(`page spec selects no pages: ${spec}`);
   return out;
 }
 
@@ -90,5 +94,6 @@ try {
   }
 } catch (err) {
   console.error(`[error] ${err.message}`);
-  process.exit(err.code === "ENOENT" ? 2 : 1);
+  const IO_CODES = ["ENOENT", "EACCES", "EISDIR", "ENOSPC", "EPERM", "EROFS"];
+  process.exit(IO_CODES.includes(err.code) ? 2 : 1);
 }
