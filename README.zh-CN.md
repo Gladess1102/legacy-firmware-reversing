@@ -24,10 +24,11 @@
 │   ├── EXPERIMENTS.template.md     证伪实验登记纪律
 │   ├── safe_flasher.py             零变砖刷写骨架（碰设备之前先过全部断言）
 │   └── surrogate_stub.S            DSP56300 桩模板（除法/消息记录/rts 毯）+ 已知暗坑清单
-├── dsh-plugin/               DSH (DeepSeek Harness) cordis 插件，零依赖
-│   ├── lib/core.js           安全闸门 / 双镜像 Diff / 实验格式化（纯函数）
-│   ├── lib/index.js          cordis service 注册
-│   └── bin/cli.js            独立 CLI：fw-recon check|diff|log
+├── package.json              dsh-fw-recon —— 可直接安装的 DSH 插件包（dsh.bundle.patch）
+├── cordis.patch.yml          bundle 补丁：安装时自动挂载插件
+├── lib/core.js               安全闸门 / 双镜像 Diff / 实验格式化（纯函数）
+├── lib/index.js              cordis service 注册
+├── bin/cli.js                独立 CLI：fw-recon check|diff|log
 ├── case-studies/MP-B300.md   本方法论来源的完整战役
 └── CREDITS.md                实名致谢（见下）
 ```
@@ -56,9 +57,14 @@ references 按需加载。
 ### 作为 DSH 插件
 
 ```bash
-ln -s "$PWD/dsh-plugin" ~/.dsh/profiles/desktop/local-packages/dsh-fw-recon
-# 在 cordis.patch.yml 的 insert 列表登记后重启 DSH
+# 一条命令：装包并通过自带的 cordis.patch.yml 自动挂载
+dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
+
+# 或用本地目录
+dsh plugin --profile <profile> add /绝对路径/legacy-firmware-reversing
 ```
+
+装完重启 DSH。插件注册一个 `fw-recon` service 供 Agent 调用；下面的 CLI 有无 DSH 都能用。
 
 ### 作为独立 CLI（不需要 DSH）
 

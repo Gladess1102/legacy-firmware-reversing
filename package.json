@@ -1,0 +1,54 @@
+{
+  "name": "dsh-fw-recon",
+  "version": "0.2.0",
+  "description": "Legacy firmware recon toolkit for DSH: flash-image safety gates (sector-tail whitelist, protected-page asserts), twin-image diff, and falsification-experiment logbook. Zero runtime dependencies.",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "fw-recon": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "Gladess1102",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gladess1102/legacy-firmware-reversing.git"
+  },
+  "homepage": "https://github.com/Gladess1102/legacy-firmware-reversing#readme",
+  "bugs": {
+    "url": "https://github.com/Gladess1102/legacy-firmware-reversing/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "firmware",
+    "reverse-engineering",
+    "sigmatel",
+    "flash",
+    "security-gate"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "cordis.patch.yml",
+    "lib",
+    "bin",
+    "SKILL.md",
+    "references",
+    "templates",
+    "case-studies",
+    "README.md",
+    "README.zh-CN.md",
+    "CREDITS.md",
+    "LICENSE"
+  ]
+}

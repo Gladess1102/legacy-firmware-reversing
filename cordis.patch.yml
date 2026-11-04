@@ -1,0 +1,13 @@
+# dsh-fw-recon bundle patch.
+#
+# The package declares this file through `dsh.bundle.patch` in package.json, and
+# `plugin_manager install_bundle` applies it as one layer of the profile's
+# composed tree. Installing the bundle is therefore the whole setup: the row
+# below is what mounts the plugin.
+#
+# Installing:
+#   dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
+#
+- insert:
+    - id: dsh-fw-recon
+      name: dsh-fw-recon

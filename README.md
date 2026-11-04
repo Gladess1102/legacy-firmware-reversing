@@ -26,10 +26,11 @@ source code, no public flashing docs, and a vendor that no longer exists.
 │   ├── EXPERIMENTS.template.md     falsification logbook discipline
 │   ├── safe_flasher.py             zero-brick flashing skeleton (asserts BEFORE touching the device)
 │   └── surrogate_stub.S            DSP56300 stub template (div/message-log/blanket-rts) + known landmines
-├── dsh-plugin/               DSH (DeepSeek Harness) cordis plugin, zero dependencies
-│   ├── lib/core.js           safety gate / twin-image diff / experiment formatter (pure functions)
-│   ├── lib/index.js          cordis service registration
-│   └── bin/cli.js            standalone CLI: fw-recon check|diff|log
+├── package.json              dsh-fw-recon — installable DSH plugin package (dsh.bundle.patch)
+├── cordis.patch.yml          bundle patch: mounts the plugin when installed
+├── lib/core.js               safety gate / twin-image diff / experiment formatter (pure functions)
+├── lib/index.js              cordis service registration
+├── bin/cli.js                standalone CLI: fw-recon check|diff|log
 ├── case-studies/MP-B300.md   the campaign this came from
 └── CREDITS.md                real-name attributions (see below)
 ```
@@ -63,9 +64,15 @@ as context when facing a black-box firmware task. The references are loaded on d
 ### As a DSH plugin
 
 ```bash
-# link into DSH local-packages (see your DSH profile's cordis.patch.yml insert list)
-ln -s "$PWD/dsh-plugin" ~/.dsh/profiles/desktop/local-packages/dsh-fw-recon
+# installs the package and mounts it through its bundled cordis.patch.yml
+dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
+
+# from a local checkout
+dsh plugin --profile <profile> add /absolute/path/to/legacy-firmware-reversing
 ```
+
+Restart DSH afterwards. The plugin registers an `fw-recon` service the agent can call;
+the CLI below works with or without DSH.
 
 ### As a standalone CLI (no DSH needed)
 
