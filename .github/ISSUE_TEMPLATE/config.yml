@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the README first
+    url: https://github.com/Gladess1102/moss-image-workbench
+    about: Install steps, requirements and known limitations.

@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest a capability or a behaviour change
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: Describe the task, not only the API you want. Workarounds you already tried help.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: input
+    id: env
+    attributes:
+      label: Environment (optional)
+      placeholder: e.g. macOS 27.2, Apple M1, 16 GB

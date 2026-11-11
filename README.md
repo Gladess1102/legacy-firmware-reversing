@@ -8,6 +8,7 @@ Distilled from a multi-agent, 26-firmware-cycle live campaign against a 2004 Sha
 source code, no public flashing docs, and a vendor that no longer exists.
 
 [中文说明（README.zh-CN.md）](./README.zh-CN.md) · [CREDITS](./CREDITS.md) · [License: MIT](./LICENSE)
+**Questions, bugs, and "it stopped booting" → [Issues](https://github.com/Gladess1102/legacy-firmware-reversing/issues).** Include the device, the vendor tool chain, and which safety gate you were at. Reports of a failed flash are read first.
 
 ---
 

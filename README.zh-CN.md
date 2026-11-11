@@ -6,6 +6,7 @@
 的多 Agent 协同攻坚——一台没有源码、没有公开刷机资料、厂商早已退场的设备。
 
 [English](./README.md) · [致谢（实名）](./CREDITS.md) · [许可：MIT](./LICENSE)
+**提问、报错、刷完不进系统 → [Issues](https://github.com/Gladess1102/legacy-firmware-reversing/issues)。** 附上机型、厂商工具链版本和卡在哪一道安全闸；刷写失败的这类报告优先看。
 
 ---
 
