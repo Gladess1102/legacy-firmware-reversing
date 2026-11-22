@@ -65,7 +65,11 @@ as context when facing a black-box firmware task. The references are loaded on d
 ### As a DSH plugin
 
 ```bash
-# installs the package and mounts it through its bundled cordis.patch.yml
+# from npm (recommended) - the published package is dsh-fw-recon
+npm i -g dsh-fw-recon                               # CLI only, no DSH needed
+dsh plugin --profile <profile> add dsh-fw-recon     # as a DSH plugin
+
+# straight from GitHub
 dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
 
 # from a local checkout
@@ -89,6 +93,9 @@ settings card before the first `logExperiment`.
 ### As a standalone CLI (no DSH needed)
 
 ```bash
+# install globally
+npm i -g dsh-fw-recon
+
 # safety gate before any flash — asserts size, protected pages, sector-tail whitelist
 fw-recon check  --img new.bin --baseline factory.bin
 
