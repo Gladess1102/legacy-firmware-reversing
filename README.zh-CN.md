@@ -58,7 +58,11 @@ references 按需加载。
 ### 作为 DSH 插件
 
 ```bash
-# 一条命令：装包并通过自带的 cordis.patch.yml 自动挂载
+# 从 npm 安装（推荐）—— 发布的包名是 dsh-fw-recon
+npm i -g dsh-fw-recon                               # 只装 CLI，不需要 DSH
+dsh plugin --profile <profile> add dsh-fw-recon     # 作为 DSH 插件
+
+# 直接从 GitHub 装
 dsh plugin --profile <profile> add github:Gladess1102/legacy-firmware-reversing
 
 # 或用本地目录
@@ -80,6 +84,9 @@ dsh plugin --profile <profile> add /绝对路径/legacy-firmware-reversing
 ### 作为独立 CLI（不需要 DSH）
 
 ```bash
+# 全局安装
+npm i -g dsh-fw-recon
+
 # 刷前安全闸门——断言尺寸 / 保护页 / 扇区尾标白名单
 fw-recon check  --img new.bin --baseline factory.bin
 
