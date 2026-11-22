@@ -1,6 +1,6 @@
 {
   "name": "dsh-fw-recon",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Legacy firmware recon toolkit for DSH: flash-image safety gates (sector-tail whitelist, protected-page asserts), twin-image diff, and falsification-experiment logbook. Zero runtime dependencies.",
   "type": "module",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   "author": "Gladess1102",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gladess1102/legacy-firmware-reversing.git"
+    "url": "git+https://github.com/Gladess1102/legacy-firmware-reversing.git"
   },
   "homepage": "https://github.com/Gladess1102/legacy-firmware-reversing#readme",
   "bugs": {
