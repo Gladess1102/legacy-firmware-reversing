@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.2 — 2026-11-23
+
+**Packaging pass: the package is now on the npm registry as `dsh-fw-recon`.**
+
+### Changed
+
+- `bin` is declared as `./bin/cli.js`, so `npm publish` no longer rewrites the field (it was being normalized on every publish); the installed `fw-recon` command is unchanged.
+- README (en/zh): the npm route is documented next to the GitHub and local-checkout routes — `npm i -g dsh-fw-recon` for the CLI, `dsh plugin --profile <profile> add dsh-fw-recon` for the plugin.
+
+### Registry
+
+- `dsh-fw-recon@0.2.1` was the first registry publish (2026-11-23); `0.2.2` carries the docs and metadata fixes above.
+
 ## 0.2.1 — 2026-11-04
 
 **Two silent safety-gate bypasses closed, plus seven general defects.**
